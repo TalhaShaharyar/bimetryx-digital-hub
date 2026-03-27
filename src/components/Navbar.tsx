@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "Services", to: "/services" },
+  { label: "Portfolio", to: "/portfolio" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
@@ -29,9 +30,9 @@ const Navbar = () => {
             <Link
               key={l.to}
               to={l.to}
-              className={`text-sm font-medium transition-colors hover:text-teal ${
+              className={`text-sm font-medium transition-colors hover:text-gold ${
                 location.pathname === l.to
-                  ? "text-teal"
+                  ? "text-gold"
                   : "text-primary-foreground/80"
               }`}
             >
@@ -40,7 +41,7 @@ const Navbar = () => {
           ))}
           <Link
             to="/contact"
-            className="bg-teal text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-md hover:brightness-110 transition"
+            className="bg-gold text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-lg hover:brightness-110 transition"
           >
             Get in Touch
           </Link>
@@ -64,9 +65,9 @@ const Navbar = () => {
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              className={`block py-3 text-sm font-medium transition-colors hover:text-teal ${
+              className={`block py-3 text-sm font-medium transition-colors hover:text-gold ${
                 location.pathname === l.to
-                  ? "text-teal"
+                  ? "text-gold"
                   : "text-primary-foreground/80"
               }`}
             >
@@ -76,7 +77,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-2 block text-center bg-teal text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-md"
+            className="mt-2 block text-center bg-gold text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-lg"
           >
             Get in Touch
           </Link>
@@ -88,10 +89,10 @@ const Navbar = () => {
 
 const BIMetryxLogo = () => (
   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="12" width="10" height="10" rx="1.5" fill="#1D9E75" opacity="0.9" />
-    <rect x="10" y="6" width="10" height="10" rx="1.5" fill="#1B3A6B" />
+    <rect x="2" y="12" width="10" height="10" rx="1.5" fill="#D97706" opacity="0.9" />
+    <rect x="10" y="6" width="10" height="10" rx="1.5" fill="#0F1D36" />
     <rect x="18" y="14" width="10" height="10" rx="1.5" fill="#C0392B" opacity="0.85" />
-    <rect x="8" y="18" width="8" height="8" rx="1.5" fill="#1B3A6B" opacity="0.5" />
+    <rect x="8" y="18" width="8" height="8" rx="1.5" fill="#0F1D36" opacity="0.5" />
   </svg>
 );
 

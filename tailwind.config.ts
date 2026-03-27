@@ -24,7 +24,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         navy: "hsl(var(--navy))",
-        teal: "hsl(var(--teal))",
+        gold: "hsl(var(--gold))",
         terracotta: "hsl(var(--terracotta))",
         "light-bg": "hsl(var(--light-bg))",
         primary: {

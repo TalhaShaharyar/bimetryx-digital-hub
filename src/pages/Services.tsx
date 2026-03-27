@@ -57,7 +57,6 @@ const services = [
 
 const Services = () => (
   <>
-    {/* Hero */}
     <section className="bg-navy py-20">
       <div className="container mx-auto px-4 lg:px-8 text-center">
         <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground animate-fade-in">
@@ -69,25 +68,24 @@ const Services = () => (
       </div>
     </section>
 
-    {/* Services list */}
     <section className="py-16">
       <div className="container mx-auto px-4 lg:px-8 space-y-8">
         {services.map((s, i) => (
           <FadeInSection key={i} delay={i * 50}>
-            <div className={`rounded-lg border border-border p-8 md:p-10 ${i % 2 === 0 ? "bg-card" : "bg-light-bg"}`}>
+            <div className={`rounded-xl border border-border p-8 md:p-10 ${i % 2 === 0 ? "bg-card" : "bg-light-bg"}`}>
               <div className="flex items-start gap-4">
-                <div className="shrink-0 w-12 h-12 rounded-lg bg-navy/5 flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 rounded-xl bg-navy/5 flex items-center justify-center">
                   <s.icon className="text-navy" size={24} />
                 </div>
                 <div className="flex-1">
                   <h2 className="text-xl md:text-2xl font-heading font-bold text-navy">{s.name}</h2>
                   <p className="mt-3 text-muted-foreground leading-relaxed">{s.desc}</p>
                   <div className="mt-5">
-                    <h4 className="text-sm font-semibold text-teal uppercase tracking-wider mb-2">Key Deliverables</h4>
+                    <h4 className="text-sm font-semibold text-gold uppercase tracking-wider mb-2">Key Deliverables</h4>
                     <ul className="grid sm:grid-cols-2 gap-2">
                       {s.deliverables.map((d, j) => (
                         <li key={j} className="flex items-center gap-2 text-sm text-foreground">
-                          <span className="w-1.5 h-1.5 rounded-full bg-teal shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
                           {d}
                         </li>
                       ))}
