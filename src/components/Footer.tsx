@@ -8,6 +8,7 @@ const specialties = [
 const quickLinks = [
   { label: "Home", to: "/" },
   { label: "Services", to: "/services" },
+  { label: "Portfolio", to: "/portfolio" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
@@ -16,7 +17,6 @@ const Footer = () => (
   <footer className="bg-navy text-primary-foreground">
     <div className="container mx-auto px-4 lg:px-8 py-12">
       <div className="grid md:grid-cols-3 gap-8">
-        {/* Brand */}
         <div>
           <h3 className="font-heading text-xl font-bold mb-2">BIMetryx</h3>
           <p className="text-primary-foreground/60 text-sm leading-relaxed">
@@ -24,9 +24,8 @@ const Footer = () => (
           </p>
         </div>
 
-        {/* Quick Links */}
         <div>
-          <h4 className="font-heading text-sm font-semibold uppercase tracking-wider mb-3 text-teal">
+          <h4 className="font-heading text-sm font-semibold uppercase tracking-wider mb-3 text-gold">
             Quick Links
           </h4>
           <ul className="space-y-2">
@@ -34,7 +33,7 @@ const Footer = () => (
               <li key={l.to}>
                 <Link
                   to={l.to}
-                  className="text-sm text-primary-foreground/70 hover:text-teal transition-colors"
+                  className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
                 >
                   {l.label}
                 </Link>
@@ -43,21 +42,19 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
-          <h4 className="font-heading text-sm font-semibold uppercase tracking-wider mb-3 text-teal">
+          <h4 className="font-heading text-sm font-semibold uppercase tracking-wider mb-3 text-gold">
             Contact
           </h4>
           <a
             href="mailto:BIMetryx@hotmail.com"
-            className="text-sm text-primary-foreground/70 hover:text-teal transition-colors"
+            className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
           >
             BIMetryx@hotmail.com
           </a>
         </div>
       </div>
 
-      {/* Specialties */}
       <div className="mt-10 pt-6 border-t border-primary-foreground/10 flex flex-wrap gap-2 justify-center">
         {specialties.map((s) => (
           <span

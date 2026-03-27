@@ -36,22 +36,21 @@ const Index = () => (
   <>
     {/* HERO */}
     <section className="relative bg-navy overflow-hidden">
-      {/* Geometric grid pattern */}
       <div className="absolute inset-0 opacity-[0.06]" style={{
         backgroundImage: `
-          linear-gradient(hsl(155 69% 37% / 0.3) 1px, transparent 1px),
-          linear-gradient(90deg, hsl(155 69% 37% / 0.3) 1px, transparent 1px)
+          linear-gradient(hsl(32 95% 44% / 0.3) 1px, transparent 1px),
+          linear-gradient(90deg, hsl(32 95% 44% / 0.3) 1px, transparent 1px)
         `,
         backgroundSize: "60px 60px",
       }} />
-      <div className="absolute top-20 right-10 w-40 h-40 border border-teal/10 rotate-45 hidden lg:block" />
+      <div className="absolute top-20 right-10 w-40 h-40 border border-gold/10 rotate-45 hidden lg:block" />
       <div className="absolute bottom-10 left-20 w-24 h-24 border border-terracotta/10 rotate-12 hidden lg:block" />
 
       <div className="container mx-auto px-4 lg:px-8 py-24 lg:py-36 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight animate-fade-in">
             End-to-End BIM Services.{" "}
-            <span className="text-teal">Built for Precision.</span>
+            <span className="text-gold">Built for Precision.</span>
           </h1>
           <p className="mt-6 text-lg text-primary-foreground/70 leading-relaxed max-w-2xl animate-fade-in-delay-1">
             BIMetryx delivers high-LOD BIM modeling, VDC management, 4D sequencing, clash detection, AR/VR visualization, and custom BIM technology — from a single, integrated remote team.
@@ -59,13 +58,13 @@ const Index = () => (
           <div className="mt-8 flex flex-wrap gap-4 animate-fade-in-delay-2">
             <Link
               to="/services"
-              className="inline-flex items-center gap-2 bg-teal text-primary-foreground font-semibold px-6 py-3 rounded-md hover:brightness-110 transition"
+              className="inline-flex items-center gap-2 bg-gold text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:brightness-110 transition"
             >
               Explore Our Services <ArrowRight size={18} />
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 border-2 border-primary-foreground/30 text-primary-foreground font-semibold px-6 py-3 rounded-md hover:border-teal hover:text-teal transition"
+              className="inline-flex items-center gap-2 border-2 border-primary-foreground/30 text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:border-gold hover:text-gold transition"
             >
               Get in Touch
             </Link>
@@ -83,7 +82,7 @@ const Index = () => (
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-heading font-bold text-navy">{s.value}</div>
                 <div className="mt-1 text-sm text-muted-foreground font-medium">{s.label}</div>
-                <div className="mx-auto mt-2 w-8 h-0.5 bg-teal rounded-full" />
+                <div className="mx-auto mt-2 w-8 h-0.5 bg-gold rounded-full" />
               </div>
             </FadeInSection>
           ))}
@@ -106,8 +105,8 @@ const Index = () => (
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
             <FadeInSection key={i} delay={i * 60}>
-              <div className="group bg-card border border-border rounded-lg p-6 hover:border-teal hover:shadow-lg hover:shadow-teal/5 transition-all duration-300">
-                <s.icon className="text-navy group-hover:text-teal transition-colors" size={28} />
+              <div className="group bg-card border border-border rounded-xl p-6 hover:border-gold hover:shadow-lg hover:shadow-gold/5 transition-all duration-300">
+                <s.icon className="text-navy group-hover:text-gold transition-colors" size={28} />
                 <h3 className="mt-4 font-heading text-base font-semibold text-navy">{s.name}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
@@ -123,7 +122,7 @@ const Index = () => (
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy leading-tight">
-              Why teams choose <span className="text-teal">BIMetryx</span>
+              Why teams choose <span className="text-gold">BIMetryx</span>
             </h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               We don't just model — we embed, coordinate, automate, and visualize. Everything your BIM environment needs, delivered by one accountable team.
@@ -134,7 +133,7 @@ const Index = () => (
             <ul className="space-y-4">
               {whyPoints.map((p, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="text-teal mt-0.5 shrink-0" size={20} />
+                  <CheckCircle2 className="text-gold mt-0.5 shrink-0" size={20} />
                   <span className="text-foreground text-sm leading-relaxed">{p}</span>
                 </li>
               ))}
@@ -153,7 +152,7 @@ const Index = () => (
           </h2>
           <Link
             to="/contact"
-            className="mt-6 inline-flex items-center gap-2 bg-teal text-primary-foreground font-semibold px-8 py-3 rounded-md hover:brightness-110 transition"
+            className="mt-6 inline-flex items-center gap-2 bg-gold text-primary-foreground font-semibold px-8 py-3 rounded-lg hover:brightness-110 transition"
           >
             Let's Talk <ArrowRight size={18} />
           </Link>

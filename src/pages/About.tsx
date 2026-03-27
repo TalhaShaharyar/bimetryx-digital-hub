@@ -21,7 +21,6 @@ const values = [
 
 const About = () => (
   <>
-    {/* Hero */}
     <section className="bg-navy py-20">
       <div className="container mx-auto px-4 lg:px-8 text-center">
         <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground animate-fade-in">
@@ -30,7 +29,6 @@ const About = () => (
       </div>
     </section>
 
-    {/* Story */}
     <section className="bg-card py-16">
       <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
         <FadeInSection>
@@ -52,7 +50,6 @@ const About = () => (
       </div>
     </section>
 
-    {/* Values */}
     <section className="bg-light-bg py-16">
       <div className="container mx-auto px-4 lg:px-8">
         <FadeInSection>
@@ -61,9 +58,9 @@ const About = () => (
         <div className="mt-10 grid md:grid-cols-3 gap-6">
           {values.map((v, i) => (
             <FadeInSection key={i} delay={i * 100}>
-              <div className="bg-card rounded-lg border border-border p-8 text-center h-full">
-                <div className="mx-auto w-14 h-14 rounded-full bg-teal/10 flex items-center justify-center">
-                  <v.icon className="text-teal" size={26} />
+              <div className="bg-card rounded-xl border border-border p-8 text-center h-full">
+                <div className="mx-auto w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center">
+                  <v.icon className="text-gold" size={26} />
                 </div>
                 <h3 className="mt-5 font-heading text-lg font-bold text-navy">{v.title}</h3>
                 <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{v.desc}</p>
@@ -74,7 +71,6 @@ const About = () => (
       </div>
     </section>
 
-    {/* Remote Model */}
     <section className="bg-card py-16">
       <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
         <FadeInSection>
@@ -85,9 +81,9 @@ const About = () => (
         </FadeInSection>
 
         <FadeInSection delay={100}>
-          <div className="mt-10 bg-navy rounded-lg p-8">
+          <div className="mt-10 bg-navy rounded-xl p-8">
             <h3 className="font-heading text-lg font-bold text-primary-foreground flex items-center gap-2">
-              <Shield className="text-teal" size={22} /> ISO 19650 Commitment
+              <Shield className="text-gold" size={22} /> ISO 19650 Commitment
             </h3>
             <p className="mt-3 text-primary-foreground/70 text-sm leading-relaxed">
               Every project we deliver adheres to ISO 19650 information management standards. From BIM execution plans to common data environments, we ensure your project's information lifecycle is structured, governed, and audit-ready.
