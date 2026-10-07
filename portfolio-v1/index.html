@@ -3,63 +3,59 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f4f1e8" />
+  <meta name="theme-color" content="#f3f0e8" />
   <title>Talha Shaharyar — Construction Intelligence</title>
   <meta name="description" content="Civil engineer working across construction delivery, digital construction, AI products and intelligent project systems." />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="drawing-grid" aria-hidden="true"></div>
-  <div class="cursor-coordinate" id="cursorCoordinate" aria-hidden="true">X:000 Y:000</div>
-
-  <header class="site-header">
-    <a href="#top" class="brand technical">TS / PORTFOLIO</a>
-    <nav aria-label="Primary navigation">
-      <a href="#log">PROJECT LOG</a>
-      <a href="#works">WORKS</a>
-      <a href="#research">RESEARCH</a>
-      <a href="#contact">CONTACT</a>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home">TS</a>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="#story" data-section="story">Story</a>
+      <a href="#timeline" data-section="timeline">Timeline</a>
+      <a href="#works" data-section="works">Works</a>
+      <a href="#research" data-section="research">Research</a>
+      <a href="#contact" data-section="contact">Contact</a>
     </nav>
-    <a class="admin-link technical" href="./admin.html">ADMIN</a>
+    <span class="header-status" id="headerStatus">Overview</span>
   </header>
-
-  <main id="top">
-    <section class="hero sheet-frame reveal" id="hero"></section>
-    <section class="stats-strip reveal" id="stats"></section>
-
-    <section class="section-wrap reveal" id="log">
-      <div class="section-title-row">
-        <div>
-          <span class="technical kicker">SHEET INDEX / CHRONOLOGY</span>
-          <h2>PROJECT LOG</h2>
-        </div>
-        <div class="scale-tag technical">SCALE: NTS</div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" id="profileEyebrow"></p>
+        <h1 id="profileName"></h1>
+        <h2 id="profileHeadline"></h2>
+        <p class="hero-intro" id="profileIntro"></p>
+        <a class="text-link" href="#story">Follow the trajectory ↓</a>
       </div>
-      <div class="filter-bar" id="filters"></div>
-      <div class="timeline" id="timeline"></div>
+      <figure class="portrait-shell" id="portraitShell" hidden><img id="profileImage" alt="" /></figure>
+      <div class="portrait-placeholder" id="portraitPlaceholder" aria-label="Profile image placeholder"><div class="portrait-grid"></div><span>PROFILE IMAGE<br>ADD IN /ADMIN</span></div>
     </section>
-
-    <section class="section-wrap reveal" id="works">
-      <div class="section-title-row">
-        <div>
-          <span class="technical kicker">SELECTED DETAILS</span>
-          <h2>WORKS / SYSTEMS</h2>
-        </div>
-        <div class="scale-tag technical">DETAIL SET P-100</div>
+    <section class="story-section" id="story">
+      <div class="section-intro"><p class="eyebrow">TRAJECTORY</p><h2>Construction first.<br>Technology with context.</h2></div>
+      <div class="chapters" id="chapters"></div>
+    </section>
+    <section class="timeline-section" id="timeline">
+      <div class="section-intro timeline-heading">
+        <div><p class="eyebrow">SELECTED RECORD</p><h2>Project timeline.</h2><p id="timelineIntro" class="section-copy"></p></div>
+        <label class="search-box"><span>Search timeline</span><input id="timelineSearch" type="search" placeholder="Try “estimating”, “BIM”, “Caltrans”…" /></label>
       </div>
-      <div class="project-grid" id="projects"></div>
+      <div class="filter-row" id="timelineFilters"></div>
+      <div class="timeline-list" id="timelineList"></div>
     </section>
-
-    <section class="section-wrap reveal" id="research"></section>
-    <section class="section-wrap reveal" id="contact"></section>
+    <section class="works-section" id="works">
+      <div class="section-intro"><p class="eyebrow">SELECTED WORK</p><h2>Systems I am building toward.</h2></div>
+      <div class="works-grid" id="worksGrid"></div>
+    </section>
+    <section class="research-section" id="research">
+      <div class="research-inner"><p class="eyebrow" id="researchEyebrow"></p><blockquote id="researchStatement"></blockquote><p id="researchBody"></p></div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">CONTACT</p><h2 id="contactHeading"></h2><p id="contactBody"></p></div>
+      <div class="contact-links" id="contactLinks"></div>
+    </section>
   </main>
-
-  <footer class="site-footer technical">
-    <span id="footerName">TS / 2026</span>
-    <span>WORKING DRAWING — SUBJECT TO REVISION</span>
-    <a href="#top">RETURN TO A-001 ↑</a>
-  </footer>
-
-  <script type="module" src="./app.js"></script>
-</body>
-</html>
+  <footer class="site-footer"><span>Talha Shaharyar</span><span>Construction · Digital · AI</span></footer>
+  <script type="module" src="/app.js"></script>
+</body></html>
