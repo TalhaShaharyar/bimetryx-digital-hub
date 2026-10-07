@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f1e8" />
+  <title>Talha Shaharyar — Construction Intelligence</title>
+  <meta name="description" content="Civil engineer working across construction delivery, digital construction, AI products and intelligent project systems." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="drawing-grid" aria-hidden="true"></div>
+  <div class="cursor-coordinate" id="cursorCoordinate" aria-hidden="true">X:000 Y:000</div>
+
+  <header class="site-header">
+    <a href="#top" class="brand technical">TS / PORTFOLIO</a>
+    <nav aria-label="Primary navigation">
+      <a href="#log">PROJECT LOG</a>
+      <a href="#works">WORKS</a>
+      <a href="#research">RESEARCH</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <a class="admin-link technical" href="./admin.html">ADMIN</a>
+  </header>
+
+  <main id="top">
+    <section class="hero sheet-frame reveal" id="hero"></section>
+    <section class="stats-strip reveal" id="stats"></section>
+
+    <section class="section-wrap reveal" id="log">
+      <div class="section-title-row">
+        <div>
+          <span class="technical kicker">SHEET INDEX / CHRONOLOGY</span>
+          <h2>PROJECT LOG</h2>
+        </div>
+        <div class="scale-tag technical">SCALE: NTS</div>
+      </div>
+      <div class="filter-bar" id="filters"></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="section-wrap reveal" id="works">
+      <div class="section-title-row">
+        <div>
+          <span class="technical kicker">SELECTED DETAILS</span>
+          <h2>WORKS / SYSTEMS</h2>
+        </div>
+        <div class="scale-tag technical">DETAIL SET P-100</div>
+      </div>
+      <div class="project-grid" id="projects"></div>
+    </section>
+
+    <section class="section-wrap reveal" id="research"></section>
+    <section class="section-wrap reveal" id="contact"></section>
+  </main>
+
+  <footer class="site-footer technical">
+    <span id="footerName">TS / 2026</span>
+    <span>WORKING DRAWING — SUBJECT TO REVISION</span>
+    <a href="#top">RETURN TO A-001 ↑</a>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
