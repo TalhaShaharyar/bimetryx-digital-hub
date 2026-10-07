@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Admin — Drawing Control</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="admin-body">
+  <div class="drawing-grid" aria-hidden="true"></div>
+  <header class="admin-header">
+    <div>
+      <span class="technical kicker">DRAWING CONTROL / CMS</span>
+      <h1>PORTFOLIO ADMIN</h1>
+    </div>
+    <div class="admin-actions">
+      <a class="button ghost" href="./index.html" target="_blank" rel="noreferrer">OPEN PREVIEW ↗</a>
+      <button class="button ghost" id="resetDraft">RESET DRAFT</button>
+      <button class="button" id="saveDraft">SAVE DRAFT</button>
+    </div>
+  </header>
+
+  <main class="admin-shell">
+    <aside class="admin-sidebar technical">
+      <button class="tab active" data-tab="content">01 / CONTENT</button>
+      <button class="tab" data-tab="theme">02 / THEME</button>
+      <button class="tab" data-tab="data">03 / DATA</button>
+      <button class="tab" data-tab="publish">04 / PUBLISH</button>
+    </aside>
+
+    <section class="admin-panel">
+      <div class="admin-tab-panel active" id="tab-content">
+        <div class="panel-heading">
+          <div><span class="technical kicker">EDITABLE DRAWING NOTES</span><h2>CONTENT</h2></div>
+          <button class="button small" id="addTimeline">+ TIMELINE ITEM</button>
+        </div>
+        <div id="contentEditor"></div>
+      </div>
+
+      <div class="admin-tab-panel" id="tab-theme">
+        <div class="panel-heading"><div><span class="technical kicker">GRAPHIC STANDARD</span><h2>THEME CONTROL</h2></div></div>
+        <div class="preset-grid" id="presetGrid"></div>
+        <div id="themeEditor" class="form-grid"></div>
+      </div>
+
+      <div class="admin-tab-panel" id="tab-data">
+        <div class="panel-heading"><div><span class="technical kicker">SOURCE OF TRUTH</span><h2>RAW JSON</h2></div></div>
+        <p class="admin-note">Every visible part of the V1 is stored in this object. Edit directly for fields not yet exposed in the structured form.</p>
+        <textarea id="jsonEditor" class="json-editor" spellcheck="false"></textarea>
+        <div class="row-actions">
+          <button class="button" id="applyJson">APPLY JSON</button>
+          <button class="button ghost" id="exportJson">EXPORT JSON</button>
+          <label class="button ghost file-button">IMPORT JSON<input type="file" id="importJson" accept="application/json" /></label>
+        </div>
+      </div>
+
+      <div class="admin-tab-panel" id="tab-publish">
+        <div class="panel-heading"><div><span class="technical kicker">REVISION CONTROL</span><h2>PUBLISH TO GITHUB</h2></div></div>
+        <div class="publish-card">
+          <p>This V1 can save drafts in your browser immediately. Global publishing is wired for GitHub + Vercel, but requires server-side environment variables on Vercel: <code>GITHUB_TOKEN</code>, <code>GITHUB_REPO</code>, <code>GITHUB_BRANCH</code>, and <code>ADMIN_PUBLISH_KEY</code>.</p>
+          <label>ADMIN PUBLISH KEY<input type="password" id="publishKey" placeholder="Configured in Vercel — never stored in content" /></label>
+          <button class="button" id="publishButton">PUBLISH CURRENT REVISION</button>
+          <pre id="publishStatus" class="status-box">STATUS: NOT PUBLISHED</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./admin.js"></script>
+</body>
+</html>
