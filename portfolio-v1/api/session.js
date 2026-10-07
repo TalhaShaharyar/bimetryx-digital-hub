@@ -1,0 +1,1 @@
+import {validSession} from './_auth.js';export default function handler(req,res){return res.status(validSession(req)?200:401).json({ok:validSession(req)})}
