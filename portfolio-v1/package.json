@@ -1,0 +1,7 @@
+{
+  "name": "talha-blueprint-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Data-driven construction drawing inspired portfolio with admin and theme controls."
+}
