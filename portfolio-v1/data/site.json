@@ -1,0 +1,113 @@
+{
+  "theme": {
+    "preset": "blueprint",
+    "background": "#f4f1e8",
+    "surface": "#faf8f1",
+    "ink": "#14233b",
+    "muted": "#687386",
+    "accent": "#d96b2b",
+    "grid": "#c8ced6",
+    "line": "#293a52",
+    "fontDisplay": "Arial, Helvetica, sans-serif",
+    "fontBody": "Arial, Helvetica, sans-serif",
+    "fontTechnical": "'Courier New', Courier, monospace",
+    "lineWeight": 1,
+    "gridSize": 24,
+    "motion": 1
+  },
+  "meta": {
+    "siteTitle": "Talha Shaharyar — Construction Intelligence",
+    "siteDescription": "Civil engineer working across construction delivery, digital construction, AI products and intelligent project systems."
+  },
+  "hero": {
+    "sheet": "A-001",
+    "revision": "REV 01",
+    "issue": "ISSUED FOR PORTFOLIO",
+    "eyebrow": "CIVIL ENGINEER / CONSTRUCTION TECHNOLOGY",
+    "name": "TALHA SHAHARYAR",
+    "title": "FROM PROJECT DELIVERY TO INTELLIGENT CONSTRUCTION SYSTEMS",
+    "summary": "A construction practitioner working at the intersection of project engineering, BIM, AI-enabled workflows and research in project-aware automation.",
+    "primaryCta": "VIEW PROJECT LOG",
+    "secondaryCta": "OPEN RESEARCH NOTE"
+  },
+  "stats": [
+    {"label":"PROJECT EXPERIENCE","value":"U.S. + PAK"},
+    {"label":"CORE DOMAIN","value":"AEC / CIVIL"},
+    {"label":"CURRENT FOCUS","value":"AI × CONSTRUCTION"},
+    {"label":"DRAWING STATUS","value":"WORKING SET"}
+  ],
+  "timeline": [
+    {
+      "year": "2022",
+      "code": "EST-01",
+      "category": "ESTIMATING",
+      "title": "Quantity Takeoff & Cost Estimation",
+      "org": "Residential / Commercial Projects",
+      "description": "Prepared takeoffs, estimates, bid packages and scope interpretations using PlanSwift and Bluebeam.",
+      "tags": ["Bluebeam", "PlanSwift", "Preconstruction"]
+    },
+    {
+      "year": "2024",
+      "code": "EDU-01",
+      "category": "EDUCATION",
+      "title": "Bachelor of Civil Engineering",
+      "org": "NUST Islamabad",
+      "description": "Civil engineering foundation with project planning, BIM, contracts, structural design and construction management exposure.",
+      "tags": ["Civil", "BIM", "Project Controls"]
+    },
+    {
+      "year": "2024–26",
+      "code": "PE-12",
+      "category": "PROJECT ENGINEERING",
+      "title": "$12.4M Caltrans Rest Area Project",
+      "org": "TSI Engineering Inc.",
+      "description": "Supported planning, CPM updates, subcontractor coordination, RFIs, submittals, change orders, permitting, procurement and cost control.",
+      "tags": ["Caltrans", "CPM", "RFIs", "Procurement"]
+    },
+    {
+      "year": "2026",
+      "code": "AI-04",
+      "category": "CONSTRUCTION TECH",
+      "title": "Product Solutions Engineering",
+      "org": "NXTGN PLEX",
+      "description": "Translating construction and business workflows into AI-enabled product solutions, requirements and R&D opportunities.",
+      "tags": ["AI", "Workflow", "Product", "AEC"]
+    }
+  ],
+  "projects": [
+    {
+      "number": "P-101",
+      "title": "PROJECT KNOWLEDGE FOR AUTOMATION",
+      "type": "RESEARCH CONCEPT",
+      "description": "How drawings, specifications, BIM, schedules, RFIs, submittals, reports and field data can provide machines with project context beyond perception alone.",
+      "status": "IN DEVELOPMENT"
+    },
+    {
+      "number": "P-102",
+      "title": "BIM-TO-CLOUD DATA PIPELINE",
+      "type": "DIGITAL CONSTRUCTION",
+      "description": "A Revit/C# concept linking model information to cloud workflows and downstream project systems.",
+      "status": "CONCEPT"
+    },
+    {
+      "number": "P-103",
+      "title": "AI-ASSISTED PROJECT INFORMATION",
+      "type": "AEC INTELLIGENCE",
+      "description": "RAG and document-intelligence ideas for RFIs, submittals, estimating, schedules and construction decision support.",
+      "status": "EXPLORING"
+    }
+  ],
+  "research": {
+    "sheet": "R-001",
+    "label": "RESEARCH NOTE",
+    "statement": "Automated systems need access to project knowledge, not just perception and task logic.",
+    "body": "The next generation of construction automation should connect machine perception and planning with the information that actually governs a project: drawings, specifications, BIM, scope, sequence, schedule, safety constraints, RFIs, submittals, daily reports and project history."
+  },
+  "contact": {
+    "heading": "COORDINATE / COLLABORATE",
+    "body": "Open to construction technology, project engineering, digital construction and research collaborations.",
+    "email": "talhashaharyar@gmail.com",
+    "linkedin": "https://www.linkedin.com/",
+    "github": "https://github.com/TalhaShaharyar"
+  }
+}
